@@ -1,9 +1,9 @@
 # Site
-title: Halve
-description: Stylish, Two-Column Jekyll Theme
+title: LUCA GIUBERTI | gixlg
+description: "Software developer, #coding lover. Passionate about #TVseries, #manga; #tech fanatic and #youtube addicted. Geek with Swag."
 url: https://taylantatli.github.io/Halve
-logo: halve.png                                       # Site logo
-locale: en_US
+logo: gixlogo.png                                       # Site logo
+locale: it_IT
 
 # Left Block Images
 background:
@@ -29,15 +29,15 @@ sass:
 #google-analytics: UA-XXXXX-Y
 
 # Social Links
-#email:             email
-#google.plus:        username
-twitter:            username
-#facebook:           username
-github:             username
+email:             luca.giuberti@gmail.com
+google.plus:        LucaGiuberti
+twitter:            gixlg
+facebook:           lg.giubbe
+github:             gixlg
 stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:          lucagiuberti
 #xing:              username
-#instagram:          username
+instagram:          gix_lg
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
@@ -52,7 +52,7 @@ stackoverflow:     123456/username   from a "http://stackoverflow.com/users/1234
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
-behance:           username
+#behance:           username
 
 # Gems
 gems:
