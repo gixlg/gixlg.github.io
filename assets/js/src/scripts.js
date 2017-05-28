@@ -6,9 +6,28 @@ $(function() {
   $(".content").fitVids();
 });
 
+function setLeftImage(){
+  var slidersImg = [
+    '../images/slider-images/01.jpg',
+    '../images/slider-images/04.png',
+    '../images/slider-images/05.png',
+    '../images/slider-images/06.png',
+    '../images/slider-images/08.png',
+    '../images/slider-images/09.png',
+    '../images/slider-images/10.png',
+    '../images/slider-images/11.png',
+    '../images/slider-images/12.png',
+    '../images/slider-images/13.png',
+    '../images/slider-images/14.png',
+    '../images/slider-images/15.png'
+  ];
+  var randomIndex = Math.floor(Math.random() * slidersImg.length);
+  $('.block-left').css('background-image', 'linear-gradient(rgba(44, 45, 51, 0.4), rgba(44, 45, 51, 0.4)), url(' + slidersImg[randomIndex] + ')');
+}
+
 // All others
 $(document).ready(function() {
-  $('.block-left').css('background-image', 'url(' + 'http://www.gixlg.it/_include/img/slider-images/01.jpg' + ')');
+  setLeftImage();
 
 	$('.image-popup').magnificPopup({
     type: 'image',
