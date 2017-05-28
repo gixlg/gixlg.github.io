@@ -31,7 +31,8 @@ layout: compress
       </div>
       <a href="../posts.html" title="posts" class="posts-menu-icon"></a>
       <div class="inner-post content">
-        <div class="date-highlight">{% if page.date %}{{ page.date | date: '%d %b %Y' }}{% else %}&#x2756;{% endif %}</div>
+        {% if page.date %}<div class="date-highlight">{{ page.date | date: '%d %b %Y' }}</div>
+        {% else %}<div class="date-highlight full">{{ page.date | date: '%d %b %Y' }}</div>{% endif %}
         {{ content }}
         <br>
         {% include share.html %}

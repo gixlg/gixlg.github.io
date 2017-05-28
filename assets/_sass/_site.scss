@@ -12,9 +12,16 @@
   overflow-y: auto;
 }
 
+.block-left{
+  width: $left-width-homepage;
+}
+
+.block-right {
+  width: $right-width-homepage;
+}
+
 .block-left,
 .block-right {
-  width: 50%;
   height: 100%;
   position: relative;
   display: table;
@@ -257,18 +264,22 @@ canvas {
     .content {
       height: auto;
       display: block;
-      max-width: 800px;
+      max-width: none;
     }
   }
 }
 
 #posts {
+  .block-left {
+    width: $left-width-post;
+  }
   .block-right {
+    width: $right-width-post;
     display: block;
     .content {
       height: auto;
       display: block;
-      max-width: 800px;
+      max-width: none;
     }
   }
   .logo {
@@ -336,6 +347,13 @@ canvas {
   }
   .tags li > a {
     color: lighten($black, 28%);
+  }
+
+  .tags li:hover {
+    background: $theme-color;
+    a {
+      color: $white;
+    }
   }
 }
 
@@ -450,7 +468,7 @@ canvas {
     a {
       color: $theme-color;
       &:hover {
-        color: #4dbe7a;
+        color: $hover-and-selection-color;
       }
     }
     em {
@@ -487,6 +505,9 @@ canvas {
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  &.full:before,&.full:after{
+    margin: 0;
+  }
   &:before {
     content: '';
     -webkit-box-flex: 1;
@@ -536,7 +557,7 @@ canvas {
   .block-left,
   .block-right {
     float: none;
-    width: 100%;
+    width: 100%!important;
   }
   html {
     overflow: auto;
@@ -635,6 +656,8 @@ canvas {
     margin: 2px 5px;
     font-size: 0.7rem;
     border: none !important;
+    padding: 7px 10px;
+    color: #474747!important;
     span {
       float: left;
       padding: 2px 6px;
@@ -673,12 +696,7 @@ canvas {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    &:first-child {
-      border-radius: 4px 0 0 4px;
-    }
-    &:last-child {
-      border-radius: 0 4px 4px 0;
-    }
+    border-radius: 4px;
     &:hover {
       background-color: $theme-color;
       color: $white !important;
