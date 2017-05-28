@@ -262,6 +262,7 @@ canvas {
   .block-right {
     display: block;
     .content {
+      padding: 0 60px;
       height: auto;
       display: block;
       max-width: none;
@@ -435,7 +436,7 @@ canvas {
     position: relative;
     left: auto;
     bottom: auto;
-    font-size: 80px;
+    font-size: 55px;
   }
   .tags > li {
     background: none;
