@@ -1,8 +1,12 @@
+$red-gixlg: #DE5E60;
+
 $white: #FFFFFF;
 $black: #000000;
 $gray: #d4d4d4;
 $overlay-color: #2c2d33;
 $green: #72cc96;
+$light-green:#399f62;
+$another-green : #4dbe7a;
 
 $red: #ee5f5b;
 $blue: #19B5FE;
@@ -11,5 +15,16 @@ $aqua: #7FDBFF;
 
 $base-font: "weblysleek_uilight", sans-serif;
 $code-font: "LiberationMonoRegular",monospace;
+$theme-color: $red-gixlg;
+$theme-post-color: $red-gixlg;
+$hover-and-selection-color: $red-gixlg;
+
 // break point
 $small: 750px;
+
+$left-width-homepage: 50%;
+$right-width-homepage: 50%;
+
+$left-width-post: 30%;
+$right-width-post: 70%;
+
