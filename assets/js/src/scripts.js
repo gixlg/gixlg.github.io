@@ -8,6 +8,8 @@ $(function() {
 
 // All others
 $(document).ready(function() {
+  $('.block-left').css('background-image', 'url(' + 'http://www.gixlg.it/_include/img/slider-images/01.jpg' + ')');
+
 	$('.image-popup').magnificPopup({
     type: 'image',
     tLoading: 'Loading image #%curr%...',

@@ -250,6 +250,17 @@ canvas {
   }
 }
 
+#homepage {
+  .block-right {
+    display: block;
+    .content {
+      height: auto;
+      display: block;
+      max-width: 800px;
+    }
+  }
+}
+
 #posts {
   .block-right {
     display: block;
