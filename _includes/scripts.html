@@ -1,7 +1,28 @@
 <!-- JS -->
 <script src="{{ site.url }}/assets/js/main.min.js"></script>
-<script src="{{ site.url }}/assets/js/src/jpreloader.min.js"></script>
+<script src="{{ site.url }}/assets/js/src/jpreloader.js"></script>
 <script>
+  function setLeftImage(){
+    var slidersImg = [
+      '../images/slider-images/01.jpg',
+      '../images/slider-images/04.png',
+      '../images/slider-images/05.png',
+      '../images/slider-images/06.png',
+      '../images/slider-images/08.png',
+      '../images/slider-images/09.png',
+      '../images/slider-images/10.png',
+      '../images/slider-images/11.png',
+      '../images/slider-images/12.png',
+      '../images/slider-images/13.png',
+      '../images/slider-images/14.png',
+      '../images/slider-images/15.png'
+    ];
+    var randomIndex = Math.floor(Math.random() * slidersImg.length);
+    $('#homepage .block-left').css('background-image', 'linear-gradient(rgba(44, 45, 51, 0.4), rgba(44, 45, 51, 0.4)), url(' + slidersImg[randomIndex] + ')');
+  }
+
+  setLeftImage();
+
   $('body').jpreLoader({
     splashID: "#jSplash",
     showSplash: true,
