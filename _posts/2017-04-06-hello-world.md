@@ -24,5 +24,6 @@ Spesso però, per la mancanza dei fattori <sup>1</sup> e <sup>2</sup>, alcuni es
 Be diciamo che questo Blog è **la scusa** per sforzarmi a **fare tutto in maniera più organizzata ed ordinata** e per poter avere una traccia chiara nel tempo di quello che ho fatto, delle difficoltà incontrate ecc..  
 Inoltre quello che faccio poterebbe <del>tornare utile o interessare</del> mmm… no non esageriamo…  
 
+
 Be come primo articolo direi che ho scritto anche troppo.  
 Alla prossima (forse).  
