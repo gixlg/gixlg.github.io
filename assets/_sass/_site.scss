@@ -296,6 +296,9 @@ canvas {
       height: auto;
       display: block;
       max-width: none;
+      .post-text{
+        font-family: $post-text-font;
+      }
     }
   }
   .logo {
@@ -576,17 +579,25 @@ canvas {
     float: none;
     width: 100%!important;
   }
+
+  #posts .block-right .content{
+    padding: 60px;
+  }
+
   html {
     overflow: auto;
   }
+
   .block-right {
     overflow-y: inherit;
   }
+
   .projects-menu li {
     width: 50% !important;
     height: 50% !important;
     float: left;
   }
+
   .share-buttons span {
     display: none;
   }
