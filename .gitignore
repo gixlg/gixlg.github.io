@@ -1,5 +1,5 @@
 .idea
 .sass-cache
 _site
-_drafts
 *.iml
+*.DS_Store
