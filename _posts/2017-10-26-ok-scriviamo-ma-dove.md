@@ -24,7 +24,7 @@ Tra tutti ero tentato (e indeciso) tra questi 4:
 Come avrete letto dal mio primo articolo, l'apertura di questo blog è una sorta di esperimento.
 La mia idea quindi era di **non perdere troppo tempo a configurare e personalizzare server**, software e temi vari ma concentrarsi il più possibile sui contenuti.
 
-<img src="{{ site.url }}/images/post-images/ok-scriviamo-ma-dove/where-to-blog.jpg" alt="where-to-blog">
+<img src="{{ site.url }}/images/post-images/ok-scriviamo-ma-dove/where-to-blog.png" alt="where-to-blog">
 
 
 [Wordpress](wordpress) è il CMS più utilizzato al mondo e non ha bisogno di presentazioni. 
@@ -38,7 +38,7 @@ Ma proprio la necessità di avere un hosting basato su nodejs mi ha bloccato. Vo
 
 [Jekyll](https://jekyllrb.com/) è quello che mi stuzzicava di più, anche esso adotta **Markdown** come formato per la scrittura degli articoli e questa era una feature molto attraente. 
 La possibilità di scivere un articolo senza aprire strani editor WYSIWYG ma scriverlo con un linguaggio "pulito" era un plus non da poco. 
-Se poi ci aggiungiamo il fatto che un blog con Jekill può essere **hostato gratuitamente sulle pagine di Github**, la scelta si faceva davvero interessatente.
+Se poi ci aggiungiamo il fatto che un blog con Jekyll può essere **hostato gratuitamente sulle pagine di Github**, la scelta si faceva davvero interessatente.
 
 Alla fine però ho rinunciato. Anche qui ho cercato di seguire il principio della "massima semplicità". 
 
@@ -89,12 +89,15 @@ Medium era TROPPO semplice. Non c'era la minima possibilità di personalizzare. 
 Inoltre odio l'editor. L'inserimento delle sezioni di codice è veramente frustrante. 
 Ancora ancora per quanto riguarda snippt di codice ma quando si vuole aggiungere semplici fammenti di inline era impossibile.
 
-Tutto questo mi ha spinto a provare Jekill. E lì ho capito che la mia scelta ideale era proprio quella.
+Tutto questo mi ha spinto a provare Jekyll. E lì ho capito che la mia scelta ideale era proprio quella.
 Come in ogni cosa della vita la scelta migliore è la via di mezzo.
-Jekill è semplice e configurabile al tempo stesso.
+Jekyll è semplice e configurabile al tempo stesso.
 
+<br/>
+<br/>
 <img src="{{ site.url }}/images/post-images/ok-scriviamo-ma-dove/so-cute.gif" alt="so cute">
-
+<br/>
+<br/>
 
 Inoltre ho capito che utilizzando Medium avrei stoppato già dalle basi il tema principale del mio blog. Ovvero la **curiosità** nello sperimentare cose nuove. Jekyll era esattamente quello. Io avevo voglia di provarlo!
 E come nelle migliori favole, è stato (quasi) amore a prima vista.
