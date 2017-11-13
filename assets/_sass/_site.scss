@@ -296,6 +296,9 @@ canvas {
       height: auto;
       display: block;
       max-width: none;
+      .post-text {
+        font-family: $post_font;
+      }
     }
   }
   .logo {
