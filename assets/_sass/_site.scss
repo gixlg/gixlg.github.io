@@ -292,7 +292,7 @@ canvas {
     width: $right-width-post;
     display: block;
     .content {
-      padding: 60px 20%;
+      padding: 60px 15%;
       height: auto;
       display: block;
       max-width: none;
@@ -301,6 +301,10 @@ canvas {
         strong{
           color: black;
         }
+      }
+
+      #disqus_thread {
+        margin: 1em 0;
       }
     }
   }
