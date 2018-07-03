@@ -28,14 +28,6 @@ Il livello di difficoltà è cresente man mano che ci si avvicina al Natale.
 
 Io sto partecipando. E confesso che mi sto divertendo molto.
 
-Mi sembra un po' di essere tornato indietro nel tempo.
-Quando da ragazzo frequentavo le superiori gli esercizi per casa o i compiti in classe di informatica erano simili a questi.
-
-Risolvendo queste piccole sfide, riprovo il divertimento che provavo allora.
-E' divertete programmare così solo per gusto di programmare. 
-E' proprio per "giochi" come questo che ho fatto dell'informatica il mio lavoro.
-
-
 Che aspettate quindi provate! Se siete malati di codice come me, vi divertirete!
 
 
