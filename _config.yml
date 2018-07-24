@@ -27,6 +27,8 @@ sass:
   sass_dir:         assets/_sass
   style:            compressed
 
+highlighter: rouge
+
 #Disqus
 comments: true
 
