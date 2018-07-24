@@ -34,7 +34,7 @@ Proprio per questo avevo il timore che mi sarei perso provando questo o quel tem
 Saperte com'è... Poi magari avrei dato una ritoccata al CSS, poi al JavaScript per finire con modificare il PHP (lo dico perchè è una storia già vissuta).
 
 Per quanto riguarda [Ghost](https://ghost.org/), mi piaceva molto l'idea di scrivere gli articoli in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) ed ero **incuriosito dal software open source basto su nodejs**.
-Ma proprio la necessità di avere un hosting basato su nodejs mi ha bloccato. Volevo rimanere sul semplice. Possedevo già un hosting con PHP e MySlq e non volevo comprarmene un altro.
+Ma proprio la necessità di avere un hosting basato su nodejs mi ha bloccato. Volevo rimanere sul semplice. Possedevo già un hosting con PHP e MySql e non volevo comprarmene un altro.
 
 [Jekyll](https://jekyllrb.com/) è quello che mi stuzzicava di più, anche esso adotta **Markdown** come formato per la scrittura degli articoli e questa era una feature molto attraente. 
 La possibilità di scivere un articolo senza aprire strani editor WYSIWYG ma scriverlo con un linguaggio "pulito" era un plus non da poco. 
