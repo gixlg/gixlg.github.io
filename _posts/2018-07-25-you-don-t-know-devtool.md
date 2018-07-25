@@ -7,13 +7,13 @@ tags:
   - javascript
 ---
 How cool is chrome?
-At my point of view is the best browser actually on the scene.  
+From my point of view is the best browser actually on the scene.  
 It is **simple** and **estensible**.
 
-Chrome doesn't offer only a very nice browser but also and amazing Development Tool, the **DevTool**.  
+Chrome doesn't offer only a very nice browser but also an amazing Development Tool, the **DevTool**.  
 DevTool, is powerful and full of features, if you are a web developer or have a bit of experience on that field you would agree with me.
 
-In this article (and I hope to show more tricks on next posts) I will show some nice features that maybe **you don't know** about **DevTool**.  
+In this article (and I hope to show more tricks on next posts), I will show some nice features that maybe **you don't know** about **DevTool**.  
 Let's start from the basic. What is the function that you use most in chrome?
 
 I bet **console.log**.  
@@ -25,7 +25,7 @@ I use it every time during the debug phase; is one of the most used and one of t
 
 Console.log is more powerful that I thought.  
 I didn't know that it's **similar to** *printf* **from c**.  
-So, in a few words, the first argument is the string that is printed but if it used some special character they are replaced by the other argument of the method.
+So, in a few words, the first argument is the string that is printed, but if it used some special character, they are replaced by the other argument of the method.
 
 E.g
 ```javascript
@@ -61,7 +61,7 @@ and then it's possible to see the text and the content of the object.
 I receved this object {data: "My data"}
 ```
 
-If the object is a **DOM element** it's possible to choose if we want to see the **DOM representation** or the **object representation.**
+If the object is a **DOM element**, it's possible to choose if we want to see the **DOM representation** or the **object representation.**
 
 E.g. 
 
@@ -103,6 +103,6 @@ After this you can see something like this.
 
 It is awesome, but **it's just a nerd thing**, to be honest I've never used it in a real project.
 
-So, that's all guys. If you find something that you did't know or just like it watch this space.
+So, that's all guys. If you find something that you did't know or just like it, watch this space.
 
 PS. All this methods are also valid for console.error, console.warn.
