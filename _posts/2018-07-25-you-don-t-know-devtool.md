@@ -25,7 +25,7 @@ I use it every time during the debug phase; is one of the most used and one of t
 
 Console.log is more powerful that I thought.  
 I didn't know that it's **similar to** *printf* **from c**.  
-So, in a few words, the first argument is the string that is printed, but if it used some special character, they are replaced by the other argument of the method.
+So, in a few words, the first argument is the string that is printed, but if it's used some special character, they are replaced by the other argument of the method.
 
 E.g
 ```javascript
@@ -40,11 +40,11 @@ will print out:
 Lots of times if I wrote something like this: 
 ```javascript
 var object = {data: "My data"};
-console.log("I receved this object: " + object);
+console.log("I received this object: " + object);
 ```
 and I get this 
 ```log
-I receved this object [object Object]
+I received this object [object Object]
 ```
 and I could not see the value of the object.  
 So at the beginning I split che console log above in two separate calls.
@@ -54,11 +54,11 @@ Not so nice, right?!
 This is a better way:
 ```javascript
 var object = {data: "My data"}
-console.log("I receved this object %o" , object)
+console.log("I received this object %o" , object)
 ```
 and then it's possible to see the text and the content of the object.
 ```log
-I receved this object {data: "My data"}
+I received this object {data: "My data"}
 ```
 
 If the object is a **DOM element**, it's possible to choose if we want to see the **DOM representation** or the **object representation.**
