@@ -27,13 +27,11 @@ sass:
   sass_dir:         assets/_sass
   style:            compressed
 
-highlighter: rouge
-
 #Disqus
 comments: true
 
 # Google Analytics
-#google-analytics: UA-XXXXX-Y
+google-analytics: UA-128876721-1
 
 # Social Links
 email:             luca.giuberti@gmail.com
@@ -45,6 +43,7 @@ stackoverflow:     5945360/gix-lg   #from a "http://stackoverflow.com/users/1234
 linkedin:          lucagiuberti
 #xing:              username
 instagram:          gix_lg
+tripadvisor:        gixlg
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
