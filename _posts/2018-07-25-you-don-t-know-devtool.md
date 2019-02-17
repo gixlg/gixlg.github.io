@@ -5,6 +5,7 @@ image: images/post-images/you-don-t-know-chrome/chrome-is-the-best.jpg
 tags:
   - DevTool
   - javascript
+  - 🇺🇸
 ---
 How cool is chrome?
 From my point of view is the best browser actually on the scene.  

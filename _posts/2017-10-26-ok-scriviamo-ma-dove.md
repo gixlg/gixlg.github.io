@@ -3,6 +3,9 @@ layout: post
 title: "Ok scriviamo! Ma dove?"
 image: images/post-images/ok-scriviamo-ma-dove/simpson.png 
 tags:
+tags:
+  - Jekyll
+  - 🇮🇹
 ---
 
 Dopo aver intrapreso la decisione di aprire un blog.
@@ -27,7 +30,7 @@ La mia idea quindi era di **non perdere troppo tempo a configurare e personalizz
 <img src="{{ site.url }}/images/post-images/ok-scriviamo-ma-dove/where-to-blog.png" alt="where-to-blog">
 
 
-[Wordpress](wordpress) è il CMS più utilizzato al mondo e non ha bisogno di presentazioni. 
+[Wordpress](https://wordpress.com/) è il CMS più utilizzato al mondo e non ha bisogno di presentazioni. 
 Nonostante questo però era la soluzione che meno mi convinceva.
 Wordpress **fa tutto. Troppo.** Ha una infinità di temi e di plugin.
 Proprio per questo avevo il timore che mi sarei perso provando questo o quel tema, senza mai convincermi su quale utilizzare.

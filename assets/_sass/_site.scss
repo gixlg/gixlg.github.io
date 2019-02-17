@@ -292,7 +292,7 @@ canvas {
     width: $right-width-post;
     display: block;
     .content {
-      padding: 60px 15%;
+      padding: 60px 5%;
       height: auto;
       display: block;
       max-width: none;
@@ -439,6 +439,10 @@ canvas {
   ul,
   ol {
     padding-left: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #6c6c6c;
+    margin-bottom: 1.3em;
     > li {
       position: relative;
       margin-bottom: 20px;

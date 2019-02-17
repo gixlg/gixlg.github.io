@@ -4,6 +4,7 @@ title: "Hello World"
 image: images/post-images/hello.jpg 
 tags:
   - Me
+  - 🇮🇹
 ---
 Ebbene si, ci provo anche io. **Apro un blog**.  
 Per quelli che non mi conoscono mi presento (se però siete arrivati qui credo già lo sappiate), **mi chiamo Luca Giuberti** e sono uno **sviluppatore** e **ingegnere informatico**.  

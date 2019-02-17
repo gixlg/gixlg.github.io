@@ -2,7 +2,9 @@
 layout: post
 title: "L'Avvento del Codice"
 image: images/post-images/l-avvento-del-codice/santa.gif 
-tags: dev
+tags:
+  - AoC
+  - 🇮🇹
 ---
 
 
