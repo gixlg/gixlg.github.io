@@ -202,7 +202,7 @@ function uploadFileToDropbox(file, path) {
   }
 ```
 
-Dropbox Access Token can be created from this [page](App Console) (and it shouldn't be shared).
+Dropbox Access Token can be created from this [page](https://www.dropbox.com/developers/apps) (and it shouldn't be shared).
 
 Now we can delete the second point as well:  
 **<del>2. save the attachments in a folder on Dropbox</del>**
