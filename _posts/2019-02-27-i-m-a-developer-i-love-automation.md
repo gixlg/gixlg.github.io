@@ -2,7 +2,7 @@
 layout: post
 title: "I'm a developer, I love automation"
 image: images/post-images/automation/automation.gif
-excerpt: "Have you ever repeat same operation over and over? In this blog post we'll see how automate some task to extract information from some mails with Google App Script and some APIs."
+excerpt: "Have you ever repeat the same operation over and over? In this blog post, we'll see how to automate some task to extract information from some emails with Google App Script and some APIs."
 tags:
   - AppScript
   - Google
@@ -10,36 +10,36 @@ tags:
   - 🇺🇸
 ---
 
-As lot of person in these days I also live in rented house.  
-Every month I receive a mail with attached the fees about the gas or the electricity power for the apartment where I live, and every time I do these operations:
-1. label it with a specific name with the corresponding year and month.
-2. save the attachments in a folder on Dropbox
-3. insert that information in a sheet on Google Drive formatted as that.  
-(The value of fees and rent are fake, I don' like to share how much I pay 😀 )  
+In these days a lot of people live in a rented house and I'm one of them.  
+Every month I receive an email with attached the fees about gas or electricity power for the apartment where I live, and every time I do these operations:
+1. label it with a specific name with the corresponding year and month;
+2. save the attachments in a Dropbox folder;
+3. insert that information in a Google Drive sheet on a table like the following:  
+(The value of fees and rent are fake 😜 )  
 
 <br/>
 <img src="{{ site.url }}/images/post-images/automation/SheetExpenses.png" >
 
-I've done that several times.  
+I've done these operations several times.  
 
 
-As all <del>good</del> developer **I'm lazy**.  
+As all <del>good</del> developer, **I'm lazy**.  
 
 
 <img src="{{ site.url }}/images/post-images/automation/homer.gif" >
 
 
-So I asked to myself: "Why I have to do the same operation manually every month?   
-Can I automate this operation?".
+So I asked myself: "Why I have to do the same operation manually every month?   
+Can I automate this stuff?".
 
-In the first step I tried with IFTTT, but is not so powerful to do what I had in mind (or maybe I simply don't know it much 😅️).
+In the first step, I tried with IFTTT, but is not so powerful to do what I had in mind (or maybe I simply don't know it much 😅️).
 
-After some research I tried with [Google App Script](https://script.google.com/home).  
-Basically it is a Google's service that allow to write application in a javascript with the possibility to interact with the API of the Google Services like GMail and Drive.
+After some research, I tried with [Google App Script](https://script.google.com/home).  
+Basically, it is a service that allows writing an application in Javascript with the possibility to use Google Service's API like GMail and Drive.
 
 <img style="width: 150px;" src="{{ site.url }}/images/post-images/automation/google-app-script.png" >
 
-With it I've done this small experiment:
+Using Google App Script I've done this small experiment:
 ```javascript
 function printMessagesInfo(messages){
   messages.forEach(function(message){
@@ -61,18 +61,16 @@ function main() {
 }
 
 ```
-To test the App go to "Run" and than select the function to execute (in my case "main"). 
-After that we can see the result clicking on "View/Log".
 
-With this few line of code **I was able to search into all my Gmail account for the <del>mails</del> Threads that have a specific label**.  
-In order to do that is necessary to allow the permission to the application to the Gmail API.
 
+With these few lines of code **I'm able to search into all my Gmail account for the <del>mails</del> Threads that have a specific label**.  
+In order to do that, is necessary to give to the application the access to the Gmail API.
 
 
 
-Ok Great it seams promising.  
-Now le'ts try do do something useful,  
-like the first task that I mentioned before.
+
+Ok Great! It seems promising.  
+Now let's try to do something more useful, like the first task that I mentioned before.
 
 ```javascript
 function getYearAndMonthStringFromDate(date){  
@@ -117,14 +115,14 @@ function main() {
 
 ```
 
-Lot of staff in there, but still pretty simple.  
+A lot of stuff in there, but still pretty simple.  
 
-Let me do just a few comment.  
-I added a flag [<sup>1</sup>] (to be precise the label `Processed by Google Script`) that allow to identify if a thead it is been already processed in order to avoid useless elaboration.    
-In the function `getYearAndMonthStringFromDate` I did a  month +1 because for example the fee on January should be paid in February [<sup>2</sup>].  
-Create a label like `Home staff/2019-02` means create a hierarchy. So `2019` is a sublabel of `Home staff` [<sup>3</sup>].
+Let me do just a few comments.  
+I added a flag [<sup>1</sup>] (to be precise the label `Processed by Google Script`) that allow identifying if a thread it is been already processed in order to avoid useless elaboration.    
+In the function `getYearAndMonthStringFromDate` I did a  month +1 because, for example the fee on January should be paid in February [<sup>2</sup>].  
+In the code I create a label like `Home staff/2019-02` to create a hierarchy, so `2019-02` is a sublabel of `Home staff` [<sup>3</sup>].
 
-Well, with this code now I'm able to do the **first step of my checklist**.  
+Well, with this code I'm able to do the **first step of my checklist** 
 **<del>1. label it with a specific name with the corresponding year and month.</del>**
 
 Now the goal is to do the second step!
@@ -163,12 +161,12 @@ function main() {
 }
 
 ```
-Nothing particular here the code is pretty straightforward.
+Nothing particular here; the code is pretty straightforward.
 
 
-To really upload the files on Dropbox I lean on the amazing Dropbox API and in particular I used this one: [file upload](https://www.dropbox.com/developers/documentation/http/documentation#files-upload).
+To really upload the files on Dropbox, I lean on the amazing Dropbox API and, in particular, I used this one: [file upload](https://www.dropbox.com/developers/documentation/http/documentation#files-upload).
 
-Here's the piece of code that call that API:
+Here's the piece of code that calls the API:
 
 ```javascript
 function uploadFileToDropbox(file, path) {
@@ -205,24 +203,24 @@ function uploadFileToDropbox(file, path) {
 Dropbox Access Token can be created from this [page](https://www.dropbox.com/developers/apps) (and it shouldn't be shared).
 
 Now we can delete the second point as well:  
-**<del>2. save the attachments in a folder on Dropbox</del>**
+**<del>2. save the attachments in a Dropbox folder</del>**
 
 Ok good, we miss the last level  😀.
 
-The hard part here is not insert the information in a Google sheet, but rather read the information.  
-The file that I receive through email is/are a pdf hence is not easy read it like a normal text file.
+At this point, the hard part is not to insert the information in a Google sheet, but rather read the information.  
+The file that I receive through email is a pdf, hence is not easy to read it like a normal text file.
 
 
 <img src="{{ site.url }}/images/post-images/automation/pdf.jpg" >
 
-After some research I found an amazing script:  [pdfToText](https://stackoverflow.com/a/26623198/5945360).  
-That script basically use OCR feature offered by Google to convert a written documento to a text.
-To activating this capability we need to enable the Drive API under  `Resources > Advanced Google Services`.  
+After some research, I found an amazing script:  [pdfToText](https://stackoverflow.com/a/26623198/5945360).  
+That script uses OCR feature, offered by Google, to convert a written document in a text.
+To activating this capability, we need to enable the Drive API under  `Resources > Advanced Google Services`.  
 
 <img style="width: 60%;" src="{{ site.url }}/images/post-images/automation/DriveAPI.png" >
 
 
-Using that I was abel to get from a pdf like this: 
+Using that, I was able to get from a pdf like this: 
 
 <img style="height: 400px;" src="{{ site.url }}/images/post-images/automation/fattura.png" >
 
@@ -231,8 +229,8 @@ a text like this:
 ""RIEPILOGO BOLLETTA Codice Cliente ********** Codice Fiscale *************************** *** * ** * ****** CONSUMI Totale Energia kWh Elettrica: 70 ••••••...""
 ```
 
-From that, assuming that the format of the pdf remains stable through the months with some text parsing we cat get all the meaningful info that we want.  
-In my case from each invoice I get the following info:
+From that, assuming that the format of the pdf remains stable through the months with some text parsing, we can get all the info that we want.  
+In my case, from each invoice, I get the following info:
 ```javascript
 var invoceData = {
   company: "Enegan",
@@ -241,7 +239,7 @@ var invoceData = {
 }
 ```
 
-The info from each invoice are combined together and returned by `processesThread`.
+The info from each invoice is combined together and returned by `processesThread`.
 
 
 ```javascript
@@ -285,8 +283,8 @@ function main() {
 
 ```
 
-At this point I have all the data that I need to fill up my sheet.
-As before for take advantage of the Sheets API is necessary to give our authorization to the app. 
+At this point, I have all the data that I need to fill up my sheet.
+As before, for taking advantage of the Sheets API, is necessary to give our authorization to the app. 
 
 And this is the final piece of code that I'll show:
 
@@ -334,21 +332,21 @@ function fillSheetWithInfo(year, month, invoce){
 }
 
 ```
-Here the most difficult thing was calculate the right row where to write the content.  
-To do that I calculate the distance in terms of number of months between the first date in my table (so the 2018-02) to the date for the new entry.  
-When the row is known is possible to write down all the info e.g. the rent, the condominium fees, the total sum, a small description for the type of expense and so on.
+Here the most difficult thing was to calculate the right row where write the content.  
+To do that, I calculate the distance in terms of number of months between the first date in my table (so the 2018-02), to the date of the new entry.  
+When the row is known, is possible to write down all the info: the rent, the condominium fees, the total sum, a small description of the type of expense and so on.
 
-Finally we have automate also the last point.  
-**<del>3. insert that information in a sheet on Google Drive formatted as that.</del>**
+Finally, we have automated also the last point.  
+**<del>3. insert that information in a sheet on Google Drive formatted like that.</del>**
 
   
 
 Now I have created a script that can do the operation that I did manually.  
 **But still I have to run this script manually!**
 
-So solve this issue I used a "Trigger", this allow to execute my function under some condition.
-Is it possible to set a trigger from [G Suite Developer Hub](https://script.google.com/home/).
-In my case was enough to set an execution one time for month.
+So to solve this issue I used a "Trigger"; this allows to execute my function under some condition.
+It is possible to set a trigger from [G Suite Developer Hub](https://script.google.com/home/).
+In my case was enough to set an execution one time for a month.
 
 And... DONE!!!!  
 
@@ -358,11 +356,11 @@ And... DONE!!!!
 
 ## Conclusion
 Google App Script gives me a level of freedom that other preconfigured services can't have.
-It was a great solution for my use case.
-For sure the ability to write code had give me the highest degree of flexibility and it's a great plus! 
+It's a great solution for my use case.
+For sure, the ability to write code is what we, as developers, love and it gives the highest degree of flexibility: it's a great plus! 
 
-The part that I didn't like was the "IDE", if we can call it. Write code on the web page wasn't comfortable at all, compared with VSCode or other tools.  
-Another negative part wat that is not possible to use source control. Is possible to create different version of our code but is totally different to what we are used to do with git for example.   
+The part that I didn't like was the "IDE", if we can call it. Writing code on a web page wasn't comfortable at all, compared with VSCode or other tools.  
+Another negative part was the impossibility to use source control. It is possible to create different versions of our code but is totally different from what we are used to doing with git, for example.   
 
 These problems can be solved using [CLASP](https://github.com/google/clasp).  
 Indeed you can find all the code on my [GitHub Repo](https://github.com/gixlg/GASP-Monthly-House-Fee-Calculator).
