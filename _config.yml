@@ -60,6 +60,11 @@ tripadvisor:        gixlg
 #hackernews:        username
 #behance:           username
 
+#Feed RSS
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+
 # Gems
 gems:
   - jekyll-feed
